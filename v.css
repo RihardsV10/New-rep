@@ -59,6 +59,9 @@ div.big {
     border: none;
     justify-content: space-evenly;
 }
+.clr-magenta:hover {
+  background-color: rgb(135, 0, 139);
+}
 
 .clr-magenta2 {
     background-color: transparent;
@@ -68,6 +71,10 @@ div.big {
     border-radius: 5px;
     border: 3px solid rgb(199, 0, 123);
 }
+.clr-magenta2:hover {
+  background-color: rgb(199, 0, 123);
+}
+
 
 .button-list {
     display: flex;
@@ -86,4 +93,114 @@ div.big {
     border-radius: 5px;
     border: none;
     justify-content: space-evenly;
+}
+.clr-magenta3:hover {
+  background-color: rgb(129, 0, 80);
+}
+.clr-magenta3 {
+  background-color: rgb(199, 0, 123);
+  color: white;
+  cursor: pointer;
+  font-size: x-large;
+  border-radius: 5px;
+  border: none;
+  justify-content: space-evenly;
+}
+
+.button {
+  transition: 0.5s;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+.returnclass {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: x-large;
+  border-radius: 5px;
+  border: none;
+  justify-content: space-evenly;
+}
+
+.returnbtn {
+  position: absolute;
+  bottom: 100px;
+  right: 25%;
+}
+
+.top-left1 {
+  position: absolute;
+  top: 500px;
+  left: 450px;
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #393747;
+}
+
+.con-table thead tr {
+    background-color: #421468;
+    color: #dddddd;
+    border-bottom: 10px solid #ac62cb;
+}
+
+.container1 {
+    width: 1417px;
+    height: 764px;
+    border: 2px solid purple;
+}
+
+.button3 {
+    background-color: rgb(199, 0, 123);
+    color: white;
+    cursor: pointer;
+    font-size: x-large;
+    border-radius: 100px;
+    border: none;
+    justify-content: space-evenly;
+}
+
+.button3:hover {
+  background-color: rgb(133, 0, 82);
+}
+
+input {
+  border-radius: 100px;
+  border: 3px solid purple;
+}
+
+.button31 {
+  border: 3px solid rgb(199, 0, 123);
+  color: white;
+  cursor: pointer;
+  font-size: x-large;
+  border-radius: 100px;
+  justify-content: space-evenly;
+  background-color: transparent;
+
+}
+
+.button31:hover {
+  border: 3px solid rgb(110, 0, 68);
+}
+
+h2 {
+  text-decoration: underline;
+  text-decoration-color: #7e26c5;
 }
