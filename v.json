@@ -1,0 +1,62 @@
+[
+    {
+      "id": "KL1042724",
+      "nosaukums": "Katalizātors",
+      "tips": "Aprīkojums",
+      "apakstips": "Trauks",
+      "skaits": 23,
+      "svars": null,
+      "mervienibas": null,
+      "komentari": "Daži komentāri"
+    },
+    {
+      "id": "KL1042723",
+      "nosaukums": "Birete",
+      "tips": "Aprīkojums",
+      "apakstips": "Trauks",
+      "skaits": 20,
+      "svars": null,
+      "mervienibas": null,
+      "komentari": "Daži komentāri"
+    },
+    {
+      "id": "KL1042742",
+      "nosaukums": "HCL",
+      "tips": "Viela",
+      "apakstips": "Skābe",
+      "skaits": 19,
+      "svars": 40,
+      "mervienibas": null,
+      "komentari": "Daži komentāri"
+    },
+    {
+      "id": "KL1042744",
+      "nosaukums": "Kalba",
+      "tips": "Aprīkojums",
+      "apakstips": "Trauks",
+      "skaits": 20,
+      "svars": null,
+      "mervienibas": null,
+      "komentari": "Daži komentāri"
+    },
+    {
+      "id": "KL1042534",
+      "nosaukums": "Fe",
+      "tips": "Viela",
+      "apakstips": "Metāls",
+      "skaits": 48,
+      "svars": 10,
+      "mervienibas": null,
+      "komentari": "Daži komentāri"
+    },
+    {
+      "id": "KL1442721",
+      "nosaukums": "Na",
+      "tips": "Viela",
+      "apakstips": "Metāls",
+      "skaits": 20,
+      "svars": 20,
+      "mervienibas": null,
+      "komentari": "Daži komentāri"
+    }
+]

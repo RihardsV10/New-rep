@@ -1,101 +1,127 @@
 <!DOCTYPE html>
-<html><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chemistry</title>
+<html>
 
-    <link rel="stylesheet" href="v.css">
-    <link rel="icon" type="image/x-icon" href="/png/1-removebg-preview (1).png">
-    <script src="v.js" defer=""></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chemistry</title>
+
+  <link rel="stylesheet" href="v.css">
+  <link rel="icon" type="image/x-icon" href="/png/1-removebg-preview (1).png">
+  <script src="v.js" defer=""></script>
+  <script src="v2.js" defer=""></script>
+  <script src="inventars.json"></script>
+  <script src="users.json"></script>
+  <script src="vielas.json"></script>
 </head>
+
 <body>
-<header>
-<div id="amr2" style="display: block;">
-    <div class="container1"> <br>
+  <header>
+    <div id="amr2" style="display: block;">
+      <div class="container1"> <br>
         <form action="v.html">
-        <input type="submit" value="← Atpakaļ uz sākumlapu" style="float: left; margin-left: 4%;" class="returnclass">
-    </form>
-    
-        <br><br><br><br><h1 style="text-align: start; margin-left: 5%;">Publiska datubāze</h1>
-            <h2 style="text-align: start; margin-left: 5%;">Šajā datubāze Tu vari apskatīt pieejamās vielas un aprīkojumu</h2>
-            <div class="button3f" style="text-align: left; margin-left: 5%;">
-            <input type="search" placeholder="🔍Search" style="padding: 10px; width: 20%;" required="">
-            <button type="button" class="button3" style="margin-bottom: 3%;">Rādīt visu</button>
-            <button type="button" class="button31">Rādīt vielas</button> 
-            <button type="button" class="button31">Rādīt aprīkojumu</button> 
+          <input type="submit" value="← Atpakaļ uz sākumlapu" style="float: left; margin-left: 4%;" class="returnclass">
+        </form>
+
+        <br><br><br><br>
+        <h1 style="text-align: start; margin-left: 5%;">Publiska datubāze</h1>
+        <h2 style="text-align: start; margin-left: 5%;">Šajā datubāze Tu vari apskatīt pieejamās vielas un aprīkojumu
+        </h2>
+        <div class="button3f" style="text-align: left; margin-left: 5%;">
+          <input type="search" placeholder="🔍Search" style="padding: 10px; width: 20%;" required="">
+          <button type="button"  class="button3" style="margin-bottom: 3%;">Rādīt visu</button>
+          <button type="button"  class="button31">Rādīt vielas</button>
+          <button type="button"  class="button31">Rādīt aprīkojumu</button>
+          <select id="option">
+            <option value="option1">Default</option>
+            <option value="option2">Inventars</option>
+            <option value="option3">Vielas</option>
+            <option value="option4" id="ChangeTh">User</option>
+          </select>
         </div>
         <hr style="margin-bottom:3%;">
-        <table class="con-table">
-        <thead>
+        <table class="con-table" id="table-body">
+          <thead>
             <tr>
-                <th>ID</th>
-                <th>Nosaukums</th>
-                <th>Tips</th>
-                <th>Apakštips</th>
-                <th>Skaits</th>
-                <th>Svars</th>
-                <th>Komentāri</th>
-              </tr>
-              </thead>
-              <tbody><tr>
-                <td>KL1042724</td>
-                <td>Katalizātors</td>
-                <td>Aprīkojums</td>
-                <td>Trauks</td>
-                <td>23</td>
-                <td></td>
-                <td>Daži komentāri</td>
-              </tr>
-              <tr>
-                <td>KL1042723</td>
-                <td>Birete</td>
-                <td>Aprīkojums</td>
-                <td>Trauks</td>
-                <td>20</td>
-                <td></td>
-                <td>Daži komentāri</td>
-              </tr>
-              <tr>
-                <td>KL1042742</td>
-                <td>HCL</td>
-                <td>Viela</td>
-                <td>Skābe</td>
-                <td>19</td>
-                <td>40</td>
-                <td>Daži komentāri</td>
-              </tr>
-              <tr>
-                <td>KL1042744</td>
-                <td>Kalba</td>
-                <td>Aprīkojums</td>
-                <td>Trauks</td>
-                <td>20</td>
-                <td></td>
-                <td>Daži komentāri</td>
-              </tr>
-              <tr>
-                <td>KL1042534</td>
-                <td>Fe</td>
-                <td>Viela</td>
-                <td>Metāls</td>
-                <td>48</td>
-                <td>10</td>
-                <td>Daži komentāri</td>
-              </tr>
-              <tr>
-                <td>KL1442721</td>
-                <td>Na</td>
-                <td>Viela</td>
-                <td>Metāls</td>
-                <td>20</td>
-                <td>20</td>
-                <td>Daži komentāri</td>
-              </tr>
-        </tbody></table>
-        <button type="button" onclick="zin()" class="button clr-magenta" style="margin-top: 5%; margin-left: 80%;">Ziņot par kļūdu</button>
+              <th>ID</th>
+              <th>Nosaukums</th>
+              <th>Tips</th>
+              <th>Apakštips</th>
+              <th>Skaits</th>
+              <th>Svars</th>
+              <th>Mērvienība</th>
+              <th>Komentāri</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>KL1042724</td>
+              <td>Katalizātors</td>
+              <td>Aprīkojums</td>
+              <td>Trauks</td>
+              <td>23</td>
+              <td>-</td>
+              <td>-</td>
+              <td>Daži komentāri</td>
+            </tr>
+            <tr>
+              <td>KL1042723</td>
+              <td>Birete</td>
+              <td>Aprīkojums</td>
+              <td>Trauks</td>
+              <td>20</td>
+              <td>-</td>
+              <td>-</td>
+              <td>Daži komentāri</td>
+            </tr>
+            <tr>
+              <td>KL1042742</td>
+              <td>HCL</td>
+              <td>Viela</td>
+              <td>Skābe</td>
+              <td>19</td>
+              <td>40</td>
+              <td>-</td>
+              <td>Daži komentāri</td>
+            </tr>
+            <tr>
+              <td>KL1042744</td>
+              <td>Kalba</td>
+              <td>Aprīkojums</td>
+              <td>Trauks</td>
+              <td>20</td>
+              <td>-</td>
+              <td>-</td>
+              <td>Daži komentāri</td>
+            </tr>
+            <tr>
+              <td>KL1042534</td>
+              <td>Fe</td>
+              <td>Viela</td>
+              <td>Metāls</td>
+              <td>48</td>
+              <td>10</td>
+              <td>-</td>
+              <td>Daži komentāri</td>
+            </tr>
+            <tr>
+              <td>KL1442721</td>
+              <td>Na</td>
+              <td>Viela</td>
+              <td>Metāls</td>
+              <td>20</td>
+              <td>20</td>
+              <td>-</td>
+              <td>Daži komentāri</td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="button" onclick="zin()" class="button clr-magenta" style="margin-top: 5%; margin-left: 80%; margin-bottom: 10px;">Ziņot
+          par kļūdu</button>
+      </div>
     </div>
-</div>
 
-</header>
+  </header>
 </body>
+
 </html>

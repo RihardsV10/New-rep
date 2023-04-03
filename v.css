@@ -162,7 +162,7 @@ tr:nth-child(even) {
 
 .container1 {
     width: 1417px;
-    height: 764px;
+    height: auto;
     border: 2px solid purple;
 }
 
@@ -203,4 +203,34 @@ input {
 h2 {
   text-decoration: underline;
   text-decoration-color: #7e26c5;
+}
+
+/**/
+select {
+  background-color: #fff0;
+  border: 3px solid rgb(199, 0, 123);
+  border-radius: 100px;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  width: 200px;
+}
+
+select option {
+  background-color: #fff;
+  color: rgb(56, 1, 35);
+}
+
+select:hover, select:focus {
+  border-color: rgb(110, 0, 68);
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select option:checked {
+  background-color: rgb(110, 0, 68);
+  color: #ffffff;
 }
