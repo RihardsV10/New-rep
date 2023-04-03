@@ -5,7 +5,7 @@ function zin() {
 const showAllBtn = document.querySelector(".button3");
 const showSubstancesBtn = document.querySelector(".button31");
 const showInventoryBtn = document.querySelectorAll(".button31")[1];
-const tableRows = document.querySelectorAll("tbody tr");
+let tableRows = document.querySelectorAll("tbody tr");
 
 showAllBtn.addEventListener("click", function () {
   tableRows.forEach(row => {
@@ -351,6 +351,7 @@ function generateTable() {
       `;
     }
     tableBody.appendChild(row);
+    tableRows = document.querySelectorAll("tbody tr");
   });
 }
 
